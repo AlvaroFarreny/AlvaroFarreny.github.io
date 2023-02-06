@@ -7,7 +7,7 @@ export default [
 			"I'm currently studying computer science at the Universidad Europea de Madrid.",
 	},
 	{
-		year: '2021',
+		year: '2022',
 		title: 'Graphic designer & Front-end developer',
 		duration: '3 months',
 		details:
