@@ -33,6 +33,6 @@ export default [
       title: 'Basic Website of throwing dices',
       imgUrl: '/assets/lanzar-dados.jpg',
       stack: ['HTML','CSS','JavaScript'],
-      link: 'https://github.com/AlvaroFarreny/TPA',
+      link: 'https://github.com/AlvaroFarreny/Lanzar-Dados',
    },
 ]
