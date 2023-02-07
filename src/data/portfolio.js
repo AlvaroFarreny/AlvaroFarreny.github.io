@@ -18,7 +18,7 @@ export default [
       link: 'https://github.com/AlvaroFarreny/CovidAPP',
    },
    {
-      title: 'BTC Sentiment Analysis',
+      title: 'BTC Sentiment Analysis Algortihm',
       imgUrl: '/assets/btc_analisis.jpg',
       stack: ['Python'],
       link: 'https://github.com/AlvaroFarreny/AnalisisSentimientosBTC',
