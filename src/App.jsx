@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Footer from "./components/Footer";
-import Intro from "./components/Intro";
-import Portfolio from "./components/Portfolio";
-import Timeline from "./components/Timeline";
+import Navbar from "./components/Navbar";
+import { motion } from "framer-motion";
+import { Route, Routes } from "react-router-dom";
+import Projects from "./components/Projects";
+import HomePage from "./components/HomePage";
 
 function App() {
   const [theme, setTheme] = useState(null);
@@ -63,18 +65,23 @@ function App() {
 
   return (
     <>
-      <button
+      <motion.button
+        whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 0.7 }}
+        transition={{ type: "spring", stiffness: 400, damping: 17 }}
         type="button"
         onClick={handleThemeSwitch}
-        className="fixed p-2 z-10 right-20 top-4 bg-violet-300 dark:bg-orange-300 text-lg p-1 rounded-md"
+        className="fixed z-10 right-20 top-4 bg-violet-300 dark:bg-orange-300 text-lg p-1 rounded-md"
       >
         {theme === "dark" ? sun : moon}
-      </button>
+      </motion.button>
       <div className="bg-white dark:bg-slate-900 text-slate-900 dark:text-stone-300 min-h-screen font-inter">
         <div className="max-w-5xl w-11/12 mx-auto">
-          <Intro />
-          <Portfolio />
-          <Timeline />
+          <Navbar theme={theme} />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="projects" element={<Projects />} />
+          </Routes>
           <Footer />
         </div>
       </div>
