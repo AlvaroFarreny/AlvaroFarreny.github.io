@@ -33,7 +33,7 @@ export const properties = [
     livingSpace: "4,450 sq.ft.",
   },
   {
-    id: 1,
+    id: 4,
     imageUrl: "/assets/lifeplusplus.gif",
     title: "Life++",
     stack: ["Java", "JavaFX", "Arduino"],
@@ -44,7 +44,7 @@ export const properties = [
     livingSpace: "3,000 sq.ft.",
   },
   {
-    id: 2,
+    id: 5,
     imageUrl: "./public/assets/covidApp.png",
     title: "$1,200,000",
     stack: ["Java", "JavaFX", "Arduino"],
@@ -55,7 +55,7 @@ export const properties = [
     livingSpace: "2,410 sq.ft.",
   },
   {
-    id: 3,
+    id: 6,
     imageUrl: "/assets/criptoclub.png",
     title: "$2,400,000",
     stack: ["Java", "JavaFX", "Arduino"],
