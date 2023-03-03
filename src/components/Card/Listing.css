@@ -7,14 +7,14 @@
   cursor: pointer;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 0.375rem;
   overflow: hidden;
 }
 
 .listing::before {
   content: "";
   display: block;
-  padding-bottom: calc((5 / 4) * 100%);
+  padding-bottom: calc((5 / 5) * 100%);
 }
 
 .listing__content {
@@ -48,6 +48,7 @@
   align-items: flex-start;
   padding: 0px 25px;
   position: relative;
+  color:black;
 }
 
 .listing__type {

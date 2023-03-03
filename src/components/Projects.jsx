@@ -1,6 +1,4 @@
 import React from "react";
-import portfolio from "../data/portfolio";
-import PortfolioItem from "./PortfolioItem";
 import { motion, AnimatePresence } from "framer-motion";
 import Card from "../components/Card/Card";
 import { properties } from "../constants/data";
