@@ -2,8 +2,8 @@
   min-height: 600px;
   border-radius: 20px;
   position: relative;
-  background-color: white;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: grey;
+  box-shadow: rgba(228, 242, 255, 0.2) 0px 8px 24px;
   display: flex;
 }
 
@@ -34,19 +34,14 @@
 }
 
 .modal__title {
-  font-size: 3rem;
-}
-
-.modal__address {
-  font-size: 1.5rem;
-  color: #737373;
+  font-size: 2rem;
 }
 
 .modal__description {
-  color: #737373;
+  color: black;
   margin: 0px;
   padding: 0px;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .modal__close-wrapper {
@@ -90,7 +85,7 @@
   .modal__close-icon {
     width: 35px;
     height: 35px;
-    color: #cacaca;
+    color: black;
   }
 }
 
@@ -124,6 +119,6 @@
   }
 
   .modal__close-icon {
-    color: #737373;
+    color: black;
   }
 }

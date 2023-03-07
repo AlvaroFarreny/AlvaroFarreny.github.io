@@ -23,7 +23,7 @@ const Projects = () => {
             },
             exitState: {},
           }}
-          className="bg-white dark:bg-slate-900 text-slate-900 dark:text-stone-300 mt-10 mb-10 font-inter"
+          className="bg-white dark:bg-slate-900 text-slate-900 dark:text-stone-300 mt-5 mb-5 font-inter"
         >
           <div className="flex flex-col md:flex-row items-center justify-center">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

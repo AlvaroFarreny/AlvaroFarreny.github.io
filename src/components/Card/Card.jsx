@@ -17,14 +17,16 @@ const Card = ({ data }) => {
 
   return (
     <>
-      <Listing data={data} open={openModal} />
-      <AnimatePresence>
-        {open && (
-          <Overlay close={closeModal}>
-            <Modal data={data} close={closeModal} />
-          </Overlay>
-        )}
-      </AnimatePresence>
+      <div className="">
+        <Listing data={data} open={openModal} />
+        <AnimatePresence>
+          {open && (
+            <Overlay close={closeModal}>
+              <Modal data={data} close={closeModal} />
+            </Overlay>
+          )}
+        </AnimatePresence>
+      </div>
     </>
   );
 };

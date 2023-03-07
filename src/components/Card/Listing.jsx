@@ -11,11 +11,7 @@ const Listing = ({ data, open }) => {
     <motion.div className="listing" onClick={open} whileHover={{ scale: 1.1 }}>
       <div className="absolute left-0 top-0 w-full h-full bg-white overflow-hidden border-2 border-stone-900 dark:border-white rounded-md bg-white dark:bg-slate-900 text-slate-900 dark:text-stone-300">
         <div className="w-full h-[65%] overflow-hidden">
-          <img
-            className="listing__image"
-            alt="real estate mansion"
-            src={imageUrl}
-          />
+          <img className="listing__image" alt="Projects" src={imageUrl} />
         </div>
         <div className="bg-white dark:bg-slate-900 text-slate-900 dark:text-stone-300 font-inter">
           <div className="listing__row">
