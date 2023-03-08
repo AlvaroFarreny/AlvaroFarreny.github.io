@@ -7,19 +7,13 @@ export const MyComponent = () => (
 
 function Intro() {
   return (
-    <div className="flex items-center justify-center flex-col text-center pt-20 pb-6 mb-5">
+    <div className="flex items-center justify-center flex-col text-center pt-[24px] pb-6 mb-4">
       <div className="mb-5">
-        <motion.button
-          className="overflow-hidden rounded-full mb-5"
-          whileHover={{ scale: [null, 1.5, 1.4] }}
-          transition={{ duration: 0.3 }}
-        >
-          <img
-            alt="Alvaro Farreny Boixader"
-            src=".\assets\alvarofarreny.png"
-            className="h-36 md:h-[250px] mb-0"
-          />
-        </motion.button>
+        <img
+          alt="Alvaro Farreny Boixader"
+          src=".\assets\alvarofarreny.png"
+          className="h-36 md:h-[250px] mb-0  rounded-full"
+        />
       </div>
       <h1 className="text-4xl md:text-7xl dark:text-white mb-1 md:mb-3 font-bold">
         Álvaro Farreny Boixader
