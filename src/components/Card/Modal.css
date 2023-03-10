@@ -2,7 +2,7 @@
   min-height: 600px;
   border-radius: 20px;
   position: relative;
-  background-color: grey;
+  background-color: rgb(148 163 184);
   box-shadow: rgba(228, 242, 255, 0.2) 0px 8px 24px;
   display: flex;
 }
@@ -13,12 +13,13 @@
 }
 
 .modal__info {
-  background-color: white;
+  background-color: rgb(148 163 184);
   display: flex;
+  color: black;
 }
 
 .modal__row {
-  margin: 20px 0px;
+  margin: 20px 10px;
   display: flex;
   align-items: center;
   text-align: left;
@@ -27,7 +28,6 @@
 .modal__description-wrapper {
   margin: 20px 0px;
   text-align: left;
-  overflow-y: scroll;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;

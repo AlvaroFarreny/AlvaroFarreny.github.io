@@ -10,7 +10,7 @@ export const properties = [
   },
   {
     id: 2,
-    imageUrl: "./public/assets/covidApp.png",
+    imageUrl: "/assets/covidApp.png",
     title: "CovidApp",
     stack: ["Python", "Django"],
     url: "https://github.com/AlvaroFarreny/CovidAPP",

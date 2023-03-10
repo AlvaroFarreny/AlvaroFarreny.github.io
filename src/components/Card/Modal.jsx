@@ -49,15 +49,19 @@ const Modal = ({ data, close }) => {
         <motion.div className="modal__row" variants={modalRowVariants}>
           <span className="">
             {stack.map((item) => (
-              <span className="inline-block px-2 py-1 font-semibold border-2 border-slate-900 dark:border-white rounded-md ">
+              <span className="inline-block px-2 mx-2 py-1 mt-2 font-semibold border-2 border-slate-900 dark:border-black rounded-md ">
                 {item}
               </span>
             ))}
           </span>
         </motion.div>
         <motion.div className="modal__row" variants={modalRowVariants}>
-          <Feature iconName={"FaGithub"}></Feature>
-          <a href={url} className="mr-[-1]">
+          <a
+            href={url}
+            target="_blank"
+            className="flex flex-row py-2 font-semibold"
+          >
+            <Feature iconName={"FaGithub"}></Feature>
             Github
           </a>
         </motion.div>
