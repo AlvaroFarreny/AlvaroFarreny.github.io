@@ -21,13 +21,19 @@ function Intro() {
       <p className="text-base md:text-xl mb-3 font-medium">
         Computer Science Student
       </p>
-      <p className="text-sm max-w-xl mb-6 font-bold">
+      <p className="text-sm max-w-xl mb-4 font-bold">
         I'm a computer science student who is passionate about writing code,
         building software, and design. I’m currently learning React, Python, and
         Solidity. <br />
         I'm also the president of the criptoclub, the first club of my
         university about cryptocurrency and blockchain.
       </p>
+      <a
+        href="https://drive.google.com/file/d/1k27aUOoRfeJc8aea1ihsvt3nSaVFnmcp/view?usp=sharing"
+        className="text-black dark:text-white px-3 py-1 border-2 border-stone-900 dark:border-white rounded-md "
+      >
+        Download my CV
+      </a>
     </div>
   );
 }
