@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Route, Routes } from "react-router-dom";
 import Projects from "./components/Projects";
 import HomePage from "./components/HomePage";
-
+import Error404 from "./components/error404";
 function App() {
   const [theme, setTheme] = useState(null);
 
@@ -80,7 +80,8 @@ function App() {
           <Navbar theme={theme} />
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="projects" element={<Projects />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="*" element={<Error404 />} />
           </Routes>
           <Footer />
         </div>

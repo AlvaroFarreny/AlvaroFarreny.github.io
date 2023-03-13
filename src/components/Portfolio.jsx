@@ -20,7 +20,7 @@ function Portfolio() {
       </div>
       <div className="text-center mt-5">
         <Link
-          to="projects"
+          to="/projects"
           className="text-black dark:text-white px-3 py-1 border-2 border-stone-900 dark:border-white rounded-md "
         >
           All my projects
