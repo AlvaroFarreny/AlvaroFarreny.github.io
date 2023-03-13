@@ -1,2 +1,10 @@
+User-agent: Googlebot
+Disallow: 
+User-agent: googlebot-image
+Disallow: 
+User-agent: googlebot-mobile
+Disallow: 
 User-agent: *
-Allow: /*
+Disallow: 
+Disallow: /cgi-bin/
+Sitemap: https://alvarofarreny.github.io/
