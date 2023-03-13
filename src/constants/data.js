@@ -6,7 +6,7 @@ export const properties = [
     stack: ["Java", "JavaFX", "Arduino"],
     url: "https://github.com/AlvaroFarreny/Life-plus-plus",
     description:
-      "Aplicación de escritorio que gestiona distintos tipos de usuarios a través de una base de datos, almacena información de los futuros pacientes gracias a una pulsera con pulsioxímetro y GPS, y permite a los futuros médicos monitorear dichos datos en tiempo real. Desarrollado junto a Pablo González, Alejandro Sauco y Crishina Mendes",
+      "Aplicación de escritorio que gestiona distintos tipos de usuarios a través de una base de datos, almacena información de los futuros pacientes gracias a una pulsera con pulsioxímetro y GPS, y permite a los futuros médicos monitorear dichos datos en tiempo real",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const properties = [
     stack: ["Python", "Django"],
     url: "https://github.com/AlvaroFarreny/CovidAPP",
     description:
-      "Aplicación de final de asignatura de PCD para leer pasaportes COVID a través de QR y dar una verificación rápida del mismo.",
+      "Aplicación realizada en Python y Django para leer pasaportes COVID a través de QR y dar una verificación rápida al instante.",
   },
   {
     id: 3,
@@ -41,7 +41,8 @@ export const properties = [
     title: "Algoritmos Recursivos",
     stack: ["Java"],
     url: "https://github.com/AlvaroFarreny/TPA",
-    description: "Quicksort, Mergesort, Binary search algorithms using Java",
+    description:
+      "Programación de algoritmos de búqueda recursiva usando Java (Quicksort, Mergesort y Binary search)",
   },
   {
     id: 6,
@@ -50,6 +51,6 @@ export const properties = [
     stack: ["Python", "Tkinter"],
     url: "https://github.com/AlvaroFarreny/SSII-Movielens",
     description:
-      "Movie recommender based on users and given reviews of other movies based on MovieLens database.",
+      "Movie recommender to users and given reviews of other movies based on MovieLens database.",
   },
 ];
