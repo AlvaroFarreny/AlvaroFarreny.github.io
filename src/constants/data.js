@@ -45,10 +45,11 @@ export const properties = [
   },
   {
     id: 6,
-    imageUrl: "/assets/lanzar-dados.jpg",
-    title: "Basic JS website about throwing dices",
-    stack: ["HTML", "CSS", "JavaScript"],
-    url: "https://github.com/AlvaroFarreny/Lanzar-Dados",
-    description: "Web básica a modo de testing de como usar js",
+    imageUrl: "/assets/movierecommender.jpg",
+    title: "Movie Recommender",
+    stack: ["Python", "Tkinter"],
+    url: "https://github.com/AlvaroFarreny/SSII-Movielens",
+    description:
+      "Movie recommender based on users and given reviews of other movies based on MovieLens database.",
   },
 ];
