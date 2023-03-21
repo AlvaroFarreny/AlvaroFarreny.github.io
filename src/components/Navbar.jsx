@@ -5,7 +5,7 @@ const Navbar = ({ theme }) => {
   const logoUrl =
     theme === "dark" ? "/assets/logo.svg" : "/assets/logo-dark.svg";
   return (
-    <div className="text-slate-900 dark:text-stone-300 font-inter backdrop-blur-lg sticky top-0">
+    <div className="z-[9] text-slate-900 dark:text-stone-300 font-inter backdrop-blur-lg sticky top-0">
       <nav class="">
         <div class="container flex flex-wrap place-content-center mx-auto">
           <Link to="/" class="flex items-center">

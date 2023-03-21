@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import { motion } from "framer-motion";
-import { Route, Routes } from "react-router-dom";
+import { Route, Link, Routes, Navigate } from "react-router-dom";
 import Projects from "./components/Projects";
 import HomePage from "./components/HomePage";
 import Error404 from "./components/error404";
@@ -81,7 +81,8 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="*" element={<Error404 />} />
+            <Route path="/404" element={<Error404 />} />
+            <Route path="*" element={<Navigate to="/404" />} />
           </Routes>
           <Footer />
         </div>
