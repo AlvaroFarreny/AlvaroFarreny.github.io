@@ -6,8 +6,18 @@ import { Route, Link, Routes, Navigate } from "react-router-dom";
 import Projects from "./components/Projects";
 import HomePage from "./components/HomePage";
 import Error404 from "./components/error404";
+import RingLoader from "react-spinners/RingLoader";
+
 function App() {
   const [theme, setTheme] = useState(null);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2500);
+  }, []);
 
   useEffect(() => {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
@@ -65,27 +75,37 @@ function App() {
 
   return (
     <>
-      <motion.button
-        whileHover={{ scale: 1.2 }}
-        whileTap={{ scale: 0.7 }}
-        transition={{ type: "spring", stiffness: 400, damping: 17 }}
-        type="button"
-        onClick={handleThemeSwitch}
-        className="fixed z-10 right-20 top-4 bg-violet-300 dark:bg-orange-300 text-lg p-1 rounded-md"
-      >
-        {theme === "dark" ? sun : moon}
-      </motion.button>
-      <div className="bg-white dark:bg-slate-900 text-slate-900 dark:text-stone-300 min-h-screen font-inter">
-        <div className="max-w-5xl w-11/12 mx-auto">
-          <Navbar theme={theme} />
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/404" element={<Error404 />} />
-            <Route path="*" element={<Navigate to="/404" />} />
-          </Routes>
-          <Footer />
-        </div>
+      <div>
+        {loading ? (
+          <div className="flex justify-center items-center h-screen bg-white dark:bg-slate-900 text-slate-900 dark:text-stone-300">
+            <RingLoader color="#36d7b7" size={150} loading={loading} />
+          </div>
+        ) : (
+          <div>
+            <motion.button
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.7 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              type="button"
+              onClick={handleThemeSwitch}
+              className="fixed z-10 right-20 top-4 bg-violet-300 dark:bg-orange-300 dark:text-slate-900 text-lg p-1 rounded-md"
+            >
+              {theme === "dark" ? sun : moon}
+            </motion.button>
+            <div className="bg-white dark:bg-slate-900 text-slate-900 dark:text-stone-300 min-h-screen font-inter">
+              <div className="max-w-5xl w-11/12 mx-auto">
+                <Navbar theme={theme} />
+                <Routes>
+                  <Route path="/" element={<HomePage />} />
+                  <Route path="/projects" element={<Projects />} />
+                  <Route path="/404" element={<Error404 />} />
+                  <Route path="*" element={<Navigate to="/404" />} />
+                </Routes>
+                <Footer />
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </>
   );
