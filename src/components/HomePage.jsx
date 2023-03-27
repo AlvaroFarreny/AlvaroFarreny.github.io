@@ -2,6 +2,7 @@ import Intro from "./Intro";
 import Portfolio from "./Portfolio";
 import Timeline from "./Timeline";
 import { motion, AnimatePresence } from "framer-motion";
+import Portfoliov2 from "./Portfoliov2";
 
 const HomePage = () => {
   return (
@@ -26,7 +27,8 @@ const HomePage = () => {
           className=""
         >
           <Intro />
-          <Portfolio />
+          <Portfoliov2 />
+
           <Timeline />
         </motion.div>
       </AnimatePresence>
