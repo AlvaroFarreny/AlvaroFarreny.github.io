@@ -5,11 +5,11 @@ function Footer() {
     <div className="py-5 text-center">
       <div className="container max-w-screen-lg mx-auto">
         <div>
-          <div className="flex flex-wrap justify-center gap-2 ">
+          <div className="flex flex-wrap justify-center gap-4">
             <a
               alt="Twitter Alvaro Farreny Boixader"
               href="https://twitter.com/farrenyalvaro"
-              className="bg-slate-400 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full hover:bg-slate-700"
+              className="p-2 font-semibold text-white inline-flex items-center space-x-2 hover:text-slate-400"
             >
               <svg
                 className="w-5 h-5 fill-current"
@@ -23,7 +23,7 @@ function Footer() {
             <a
               alt="Linkedin Alvaro Farreny Boixader"
               href="https://linkedin.com/in/alvarofarrenyboixader"
-              className="bg-slate-400 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full hover:bg-slate-700"
+              className="p-2 font-semibold text-white inline-flex items-center space-x-2 hover:text-slate-400"
             >
               <svg
                 className="w-5 h-5 fill-current"
@@ -39,7 +39,7 @@ function Footer() {
             <a
               alt="Github Alvaro Farreny Boixader"
               href="https://github.com/AlvaroFarreny"
-              className="bg-slate-400 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full hover:bg-slate-700"
+              className="p-2 font-semibold text-white inline-flex items-center space-x-2 hover:text-slate-400"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

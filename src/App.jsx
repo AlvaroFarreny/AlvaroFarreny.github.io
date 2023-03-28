@@ -10,13 +10,18 @@ import RingLoader from "react-spinners/RingLoader";
 
 function App() {
   const [theme, setTheme] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    setLoading(true);
     setTimeout(() => {
       setLoading(false);
+      setIsLoaded(true);
     }, 2500);
+
+    return () => {
+      setIsLoaded(false);
+    };
   }, []);
 
   useEffect(() => {
@@ -78,7 +83,7 @@ function App() {
       <div>
         {loading ? (
           <div className="flex justify-center items-center h-screen bg-white dark:bg-slate-900 text-slate-900 dark:text-stone-300">
-            <RingLoader color="#36d7b7" size={150} loading={loading} />
+            <RingLoader color="#36d7b7" size={150} loading={!isLoaded} />
           </div>
         ) : (
           <div>
@@ -88,7 +93,7 @@ function App() {
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
               type="button"
               onClick={handleThemeSwitch}
-              className="fixed z-10 right-20 top-4 bg-violet-300 dark:bg-orange-300 dark:text-slate-900 text-lg p-1 rounded-md"
+              className="fixed z-10 right-10 sm:right-20 top-4 bg-violet-300 dark:bg-orange-300 dark:text-slate-900 text-lg p-1 rounded-md"
             >
               {theme === "dark" ? sun : moon}
             </motion.button>

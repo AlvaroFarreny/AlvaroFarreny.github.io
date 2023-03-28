@@ -12,9 +12,9 @@ export default [
     link: "https://github.com/AlvaroFarreny/WebFinalProject",
   },
   {
-    title: "CovidApp",
-    imgUrl: "/assets/covidApp.png",
-    stack: ["Python", "Django"],
-    link: "https://github.com/AlvaroFarreny/CovidAPP",
+    title: "BTC Sentiment Analysis Algortihm",
+    imgUrl: "/assets/btc_analisis.jpg",
+    stack: ["Python"],
+    link: "https://github.com/AlvaroFarreny/AnalisisSentimientosBTC",
   },
 ];
