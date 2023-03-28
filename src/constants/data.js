@@ -1,7 +1,7 @@
 export const properties = [
   {
     id: 1,
-    imageUrl: "/assets/lifeplusplus.gif",
+    imageUrl: "https://raw.githubusercontent.com/AlvaroFarreny/Life-plus-plus/main/lifeplusplus.gif",
     title: "Life++",
     stack: ["Java", "JavaFX", "Arduino"],
     url: "https://github.com/AlvaroFarreny/Life-plus-plus",
@@ -10,7 +10,7 @@ export const properties = [
   },
   {
     id: 2,
-    imageUrl: "/assets/movierecommender.jpg",
+    imageUrl: "https://raw.githubusercontent.com/AlvaroFarreny/SSII-Movielens/main/movierecommender.jpg",
     title: "Movie Recommender",
     stack: ["Python", "Tkinter"],
     url: "https://github.com/AlvaroFarreny/SSII-Movielens",
@@ -19,7 +19,7 @@ export const properties = [
   },
   {
     id: 3,
-    imageUrl: "/assets/criptoclub.png",
+    imageUrl: "https://raw.githubusercontent.com/AlvaroFarreny/WebFinalProject/main/criptoclub.png",
     title: "CriptoClub Website",
     stack: ["HTML+CSS", "JavaScript", "PHP"],
     url: "https://github.com/AlvaroFarreny/WebFinalProject",
@@ -28,7 +28,7 @@ export const properties = [
   },
   {
     id: 4,
-    imageUrl: "/assets/btc_analisis.jpg",
+    imageUrl: "https://raw.githubusercontent.com/AlvaroFarreny/AnalisisSentimientosBTC/main/btc_analisis.jpg",
     title: "BTC Sentiment Analysis Algortihm",
     stack: ["Python"],
     url: "https://github.com/AlvaroFarreny/AnalisisSentimientosBTC",
@@ -37,7 +37,7 @@ export const properties = [
   },
   {
     id: 5,
-    imageUrl: "/assets/Quicksort.png",
+    imageUrl: "https://raw.githubusercontent.com/AlvaroFarreny/TPA/main/Quicksort.png",
     title: "Algoritmos Recursivos",
     stack: ["Java"],
     url: "https://github.com/AlvaroFarreny/TPA",
@@ -46,7 +46,7 @@ export const properties = [
   },
   {
     id: 6,
-    imageUrl: "/assets/covidApp.png",
+    imageUrl: "https://raw.githubusercontent.com/AlvaroFarreny/CovidAPP/main/covidApp.png",
     title: "CovidApp",
     stack: ["Python", "Django"],
     url: "https://github.com/AlvaroFarreny/CovidAPP",
