@@ -53,5 +53,4 @@ export const properties = [
     description:
       "Aplicación realizada en Python y Django para leer pasaportes COVID a través de QR y dar una verificación rápida al instante.",
   },
-
 ];
