@@ -93,7 +93,7 @@ function App() {
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
               type="button"
               onClick={handleThemeSwitch}
-              className="fixed z-10 right-20 top-4 bg-violet-300 dark:bg-orange-300 dark:text-slate-900 text-lg p-1 rounded-md"
+              className="fixed z-10 right-10 sm:right-20 top-4 bg-violet-300 dark:bg-orange-300 dark:text-slate-900 text-lg p-1 rounded-md"
             >
               {theme === "dark" ? sun : moon}
             </motion.button>
