@@ -27,8 +27,7 @@ const HomePage = () => {
           className=""
         >
           <Intro />
-          <Portfoliov2 />
-
+          <Portfolio />
           <Timeline />
         </motion.div>
       </AnimatePresence>
