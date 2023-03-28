@@ -26,19 +26,39 @@ function Portfolio() {
           All my projects
         </Link>
       </div>
-      <div className="mt-20">
-        <center>
-          <img
-            className=""
-            src="https://skillicons.dev/icons?i=github,py,qt,java,eclipse,react,tailwind,js,vite,php,mysql,vscode,figma,ai,ps"
-          />
-        </center>
-      </div>
-      <div className="mt-5">
-        <div className="relative border-t border-slate-400 dark:border-slate-700" />
-        <h2 className="text-2xl font-bold mb-5 text-stone-900 dark:text-white text-center">
+      <div className="mt-16">
+        <h2 className="text-2xl font-bold mb-1 text-stone-900 dark:text-white text-center">
           My Skills
         </h2>
+        <div className="relative border-t border-slate-400 dark:border-slate-700" />
+      </div>
+      <div className="mt-3">
+        <div className="flex space-x-2 justify-center">
+          <img title="Github" src="https://skillicons.dev/icons?i=github" />
+          <img title="Python" src="https://skillicons.dev/icons?i=py" />
+          <img title="PyQt" src="https://skillicons.dev/icons?i=qt" />
+          <img title="Java" src="https://skillicons.dev/icons?i=java" />
+          <img title="Eclipse" src="https://skillicons.dev/icons?i=eclipse" />
+          <img title="React" src="https://skillicons.dev/icons?i=react" />
+          <img title="Tailwind" src="https://skillicons.dev/icons?i=tailwind" />
+          <img title="Javascript" src="https://skillicons.dev/icons?i=js" />
+          <img title="Vite" src="https://skillicons.dev/icons?i=vite" />
+          <img title="PHP" src="https://skillicons.dev/icons?i=php" />
+          <img title="MySQL" src="https://skillicons.dev/icons?i=mysql" />
+          <img
+            title="Visual Studio Code"
+            src="https://skillicons.dev/icons?i=vscode"
+          />
+          <img title="Figma" src="https://skillicons.dev/icons?i=figma" />
+          <img
+            title="Adobe Illustrator"
+            src="https://skillicons.dev/icons?i=ai"
+          />
+          <img
+            title="Adobe Photoshop"
+            src="https://skillicons.dev/icons?i=ps"
+          />
+        </div>
       </div>
     </div>
   );

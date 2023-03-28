@@ -10,12 +10,12 @@ export const properties = [
   },
   {
     id: 2,
-    imageUrl: "/assets/covidApp.png",
-    title: "CovidApp",
-    stack: ["Python", "Django"],
-    url: "https://github.com/AlvaroFarreny/CovidAPP",
+    imageUrl: "/assets/movierecommender.jpg",
+    title: "Movie Recommender",
+    stack: ["Python", "Tkinter"],
+    url: "https://github.com/AlvaroFarreny/SSII-Movielens",
     description:
-      "Aplicación realizada en Python y Django para leer pasaportes COVID a través de QR y dar una verificación rápida al instante.",
+      "Movie recommender to users and given reviews of other movies based on MovieLens database.",
   },
   {
     id: 3,
@@ -46,11 +46,12 @@ export const properties = [
   },
   {
     id: 6,
-    imageUrl: "/assets/movierecommender.jpg",
-    title: "Movie Recommender",
-    stack: ["Python", "Tkinter"],
-    url: "https://github.com/AlvaroFarreny/SSII-Movielens",
+    imageUrl: "/assets/covidApp.png",
+    title: "CovidApp",
+    stack: ["Python", "Django"],
+    url: "https://github.com/AlvaroFarreny/CovidAPP",
     description:
-      "Movie recommender to users and given reviews of other movies based on MovieLens database.",
+      "Aplicación realizada en Python y Django para leer pasaportes COVID a través de QR y dar una verificación rápida al instante.",
   },
+
 ];
