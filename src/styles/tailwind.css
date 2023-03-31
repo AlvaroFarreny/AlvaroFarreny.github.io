@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.pink_gradient {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 123px;
+    height: 123px;
+    border-radius: 50%;
+
+    background: #fb37ff;
+    filter: blur(200px);
+}
+
+.blue_gradient {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 123px;
+    height: 123px;
+    border-radius: 50%;
+
+    background: #18b2de;
+    filter: blur(200px);
+}
