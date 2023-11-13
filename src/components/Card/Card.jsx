@@ -15,17 +15,15 @@ const Card = ({ data }) => {
     setOpen(false);
   };
 
+  const openURL = (url) => {
+    window.open(url, "_blank"); // Abre la URL en una nueva ventana/tab
+  };
+
   return (
     <>
       <div className="">
+        {/* Pasamos la función openURL como prop onClick a Listing */}
         <Listing data={data} open={openModal} />
-        <AnimatePresence>
-          {open && (
-            <Overlay close={closeModal}>
-              <Modal data={data} close={closeModal} />
-            </Overlay>
-          )}
-        </AnimatePresence>
       </div>
     </>
   );

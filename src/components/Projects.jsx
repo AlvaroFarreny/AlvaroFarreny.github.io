@@ -2,6 +2,7 @@ import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Card from "../components/Card/Card";
 import { properties } from "../constants/data";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (

@@ -16,15 +16,15 @@ const Navbar = ({ theme }) => {
             ></img>
           </Link>
           <div>
-            <ul class="flex flex-wrap place-content-center mt-4 ml-[-25px] space-x-4 sm:mt-6 dark:text-white text-slate-900 ">
+            <ul class="flex flex-wrap place-content-center mt-4 ml-[-15px] space-x-7 sm:mt-6 dark:text-white text-slate-900 ">
               <li>
-                <Link to="/" class="hover:underline">
-                  Home
+                <Link to="projects" class="hover:underline">
+                  My Creations
                 </Link>
               </li>
               <li>
-                <Link to="projects" class="hover:underline">
-                  Projects
+                <Link to="about" class="hover:underline">
+                  About Me
                 </Link>
               </li>
             </ul>

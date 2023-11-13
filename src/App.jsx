@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom"; // Add this line
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import { motion } from "framer-motion";
@@ -6,12 +7,20 @@ import { Route, Link, Routes, Navigate } from "react-router-dom";
 import Projects from "./components/Projects";
 import HomePage from "./components/HomePage";
 import Error404 from "./components/error404";
+import About from "./components/about";
 import RingLoader from "react-spinners/RingLoader";
+import Lifepp from "./components/Projects/Lifepp";
+import Balu from "./components/Projects/Balu";
+import Fitfoods from "./components/Projects/Fitfoods";
+import NombresCamaro from "./components/Projects/NombresCamaro";
+import Criptoclub from "./components/Projects/Criptoclub";
+import Portfoliov1 from "./components/Projects/Portfoliov1";
 
 function App() {
   const [theme, setTheme] = useState(null);
   const [loading, setLoading] = useState(true);
   const [isLoaded, setIsLoaded] = useState(false);
+  const location = useLocation(); // Get the current location
 
   useEffect(() => {
     setTimeout(() => {
@@ -77,6 +86,10 @@ function App() {
       />
     </svg>
   );
+  useEffect(() => {
+    // Scroll to top on route change
+    window.scrollTo(0, 0);
+  }, [location]);
 
   return (
     <>
@@ -87,7 +100,7 @@ function App() {
           </div>
         ) : (
           <div>
-            <motion.button
+            {/* <motion.button
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.7 }}
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
@@ -96,13 +109,26 @@ function App() {
               className="fixed z-10 right-10 sm:right-20 top-4 bg-violet-300 dark:bg-orange-300 dark:text-slate-900 text-lg p-1 rounded-md"
             >
               {theme === "dark" ? sun : moon}
-            </motion.button>
+            </motion.button> */}
             <div className="bg-white dark:bg-slate-900 text-slate-900 dark:text-stone-300 min-h-screen font-inter">
-              <div className="max-w-5xl w-11/12 mx-auto">
+              <div className="max-w-5xl w-11/12 mx-auto z-[9]">
                 <Navbar theme={theme} />
                 <Routes>
                   <Route path="/" element={<HomePage />} />
                   <Route path="/projects" element={<Projects />} />
+                  <Route path="/projects/lifepp" element={<Lifepp />} />
+                  <Route path="/projects/balu" element={<Balu />} />
+                  <Route path="/projects/fitfoods" element={<Fitfoods />} />
+                  <Route
+                    path="/projects/nombrescamaro"
+                    element={<NombresCamaro />}
+                  />
+                  <Route path="/projects/criptoclub" element={<Criptoclub />} />
+                  <Route
+                    path="/projects/portfoliov1"
+                    element={<Portfoliov1 />}
+                  />
+                  <Route path="/about" element={<About />} />
                   <Route path="/404" element={<Error404 />} />
                   <Route path="*" element={<Navigate to="/404" />} />
                 </Routes>

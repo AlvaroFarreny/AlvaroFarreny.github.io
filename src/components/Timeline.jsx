@@ -5,8 +5,8 @@ import Title from "./Title";
 
 function Timeline() {
   return (
-    <div className="flex flex-col md:flex-row justify-center my-20">
-      <div className="w-full md:w-7/12">
+    <div className="flex flex-col md:flex-row justify-left my-20">
+      <div className="w-full">
         <h2 className="text-2xl font-bold underline underline-offset-8 decoration-4 mb-5 text-stone-900 dark:text-white">
           Timeline
         </h2>

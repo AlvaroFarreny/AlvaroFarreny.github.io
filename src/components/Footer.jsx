@@ -9,7 +9,7 @@ function Footer() {
             <a
               alt="Twitter Alvaro Farreny Boixader"
               href="https://twitter.com/farrenyalvaro"
-              className="p-2 font-semibold text-white inline-flex items-center space-x-2 hover:text-slate-400"
+              className="p-2 font-semibold text-black hover:text-gray-700 dark:text-white inline-flex items-center space-x-2 dark:hover:text-slate-400"
             >
               <svg
                 className="w-5 h-5 fill-current"
@@ -23,7 +23,7 @@ function Footer() {
             <a
               alt="Linkedin Alvaro Farreny Boixader"
               href="https://linkedin.com/in/alvarofarrenyboixader"
-              className="p-2 font-semibold text-white inline-flex items-center space-x-2 hover:text-slate-400"
+              className="p-2 font-semibold text-black hover:text-gray-700 dark:text-white inline-flex items-center space-x-2 dark:hover:text-slate-400"
             >
               <svg
                 className="w-5 h-5 fill-current"
@@ -39,7 +39,7 @@ function Footer() {
             <a
               alt="Github Alvaro Farreny Boixader"
               href="https://github.com/AlvaroFarreny"
-              className="p-2 font-semibold text-white inline-flex items-center space-x-2 hover:text-slate-400"
+              className="p-2 font-semibold text-black hover:text-gray-700 dark:text-white inline-flex items-center space-x-2 dark:hover:text-slate-400"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
